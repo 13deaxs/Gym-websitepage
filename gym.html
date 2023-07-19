@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM FITNESS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image: url(https://cdn.pixabay.com/photo/2015/07/02/10/27/training-828764_1280.jpg);
+        }
+        .left{
+          /* border: 4px solid red; */
+          display: inline-block;
+          position: absolute;
+          top: 20px;
+          left: 30px;
+          
+        }
+        .mid{
+          /* border: 4px solid yellow; */
+          width: 45%;
+          margin: 30px auto;
+        }
+        .right{
+            /* border: 4px solid green; */
+            display: inline-block;
+            position: absolute;/* we can do it with float n flexbox too*/
+            top: 20px;
+            right: 30px;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 1px 8px;
+            margin: 5px;
+            
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            
+        }
+        .btn{
+            margin: 5px;
+            padding: 4px 14px;
+            color: white;
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .btn:hover{
+            text-decoration: underline;
+            background-color: rgb(33, 33, 34);
+        }
+        .container{
+            border: 4px solid black;
+            display: inline-block;
+            width: 25%;
+            position: absolute;
+            margin: 50px 750px;
+            padding:  3px 75px;
+            border-radius: 8px;
+        }
+        .form-group input{
+            text-align: center;
+            display:block;
+            width: 300px;/*display n width to make it center in box ....remember*/
+            margin:16px;
+            font-size: 14px;
+            border: 2px solid black;
+            border-radius: 4px;
+            padding: 1px;
+        }
+        .container h1{
+            text-align: center;
+            color: black;
+            text-decoration: underline;
+        }
+        .container button{
+            display: block;
+            width: 330px;
+            background-color: black;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="https://pngtree.com/free-png-vectors/gym-logo" alt="">
+            <div>GYM FITNESS</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li><!-- active kyuki home alag se dikhe -->
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Search</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>JOIN THE GYM FITNESS CLASSES</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your phone no.">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Email id">
+            </div>
+            <div>
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
